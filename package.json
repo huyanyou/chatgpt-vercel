@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && astro preview --build",
+    "build": "node -v && astro build && astro preview --build",
     "start": "HOST=0.0.0.0 node ./dist/server/entry.mjs",
     "preview": "astro preview",
     "astro": "astro",
