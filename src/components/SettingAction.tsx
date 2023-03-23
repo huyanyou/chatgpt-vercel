@@ -115,13 +115,7 @@ export default function SettingAction(props: {
         <hr class="mt-2 bg-slate-5 bg-op-15 border-none h-1px"></hr>
       </Show>
       <div class="mt-2 flex items-center justify-between">
-        <ActionItem
-          onClick={() => {
-            setShown(!shown())
-          }}
-          icon="i-carbon:settings"
-          label="设置"
-        />
+        <ActionItem onClick={() => {}} icon="i-carbon:settings" label="设置" />
         <div class="flex">
           <ActionItem
             onClick={async () => {
