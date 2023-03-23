@@ -61,6 +61,7 @@ export const post: APIRoute = async context => {
       temperature?: number
       password?: string
     }
+    console.log("key", localKey)
 
     if (pwd && pwd !== password) {
       throw new Error("密码错误，请联系网站管理员。")
@@ -106,7 +107,6 @@ export const post: APIRoute = async context => {
 
     const encoder = new TextEncoder()
     const decoder = new TextDecoder()
-
     const rawRes = await fetchWithTimeout(
       `https://${baseURL}/v1/chat/completions`,
       {
