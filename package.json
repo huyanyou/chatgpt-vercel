@@ -69,6 +69,6 @@
   },
   "packageManager": "pnpm@7.29.0",
   "engines": {
-    "node": ">18x"
+    "node": "18x"
   }
 }
