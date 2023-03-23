@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && pnpm start",
+    "build": "astro build && astro start",
     "start": "HOST=0.0.0.0 node ./dist/server/entry.mjs",
     "preview": "astro preview",
     "astro": "astro",
@@ -69,6 +69,6 @@
   },
   "packageManager": "pnpm@7.29.0",
   "engines": {
-    "node": "18.x"
+    "node": ">18.0.0"
   }
 }
